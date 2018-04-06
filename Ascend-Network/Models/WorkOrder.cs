@@ -13,6 +13,7 @@ namespace Ascend_Network.Models
     public class WorkOrder
     {
         public WorkOrder() { }
+
         [Key]
         public string  WorkOrderNumber { get; set; }
                 
