@@ -35,7 +35,7 @@ namespace Ascend_Network.Tests.Controllers
             ViewResult result = controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.AreEqual("About us. bla bla bla bla bla", result.ViewBag.Message);
         }
 
         [TestMethod]
@@ -50,5 +50,19 @@ namespace Ascend_Network.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+        [TestMethod]
+        public void Specials()
+        {
+        
+            //arrange
+            HomeController controller = new HomeController();
+            //act
+            ViewResult result =(ViewResult) controller.Specials() ;
+
+            //assert
+            Assert.IsNotNull(result);
+
+        }
+
     }
 }
